@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>suprshot</title>
     <link rel="stylesheet" href="css/style2.css">
-    <!--    <link rel="stylesheet" href="css/0607z.css">-->
     <!--    js-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.js"></script>
@@ -24,10 +23,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Slick -->
-<!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
--->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <!--    fadeup aos-->
@@ -35,7 +30,6 @@
     <!-- icons pack-->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- swiper css -->
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">-->
     <link rel="stylesheet" href="css/swiper.min.css">
     <script>
         $(document).ready(function() {
@@ -77,12 +71,17 @@
                 delay: 0, // values from 0 to 3000, with step 50ms
                 duration: 1500 // values from 0 to 3000, with step 50ms
             });
+
+            $("#content1 > .band1").hide();
+            $("#content1 > .band1").eq(0).fadeIn();
+            $("#support-grid li").eq(0).addClass("on");
+
             $("#support-grid li").click(function() {
                 var i = $(this).index();
                 $("#support-grid li").removeClass("on");
                 $("#support-grid li").eq(i).addClass("on");
-                $('#content1 > .band1').hide();
-                $('#content1 > .band1').eq(i).fadeIn();
+                $("#content1 > .band1").hide();
+                $("#content1 > .band1").eq(i).fadeIn();
             });
 
             $('.autoplay').slick({
@@ -108,6 +107,7 @@
             });
 
         });
+
     </script>
 
 </head>
@@ -155,7 +155,7 @@
         <div class="overlay1"></div>
 
         <div class="image-slider">
-            <div class="image-slide" id="one" style="background: url(img/70dd59e34ecb823e45bfba02efd56ad24bfec94f0608982ac18299e3712eb5d2a8c58a421125d10e05d56419b8293f74fc625db69387d4e35f2275d389b82dde4fab0c27ed51740e418843252c56f6c1ddef05370be07e209abd1abea.jfif) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="one" style="background: url(../spurss/img/70dd59e34ecb823e45bfba02efd56ad24bfec94f0608982ac18299e3712eb5d2a8c58a421125d10e05d56419b8293f74fc625db69387d4e35f2275d389b82dde4fab0c27ed51740e418843252c56f6c1ddef05370be07e209abd1abea.jfif) no-repeat 50% 50%; background-size: cover;"></div>
 
             <div class="image-slide" id="two" style="background: url(img/slider-img-5.jpg) no-repeat 50% 50%; background-size: cover;"></div>
 
@@ -201,7 +201,7 @@
             <li class="item">
                 <a href="#" class="card">
                     <div class="thumb" style="background-image: url(img/general-views-of-sport-venues-after-events-postponed-due-to-covid-19-5e823392357710ee5e000023.webp);">
-                        <h1 class="h1">How  Conduct Remote Usability Testing</h1>
+                        <h1 class="h1">How Conduct Remote Usability Testing</h1>
                         <span class="span">Harry Brignull</span>
                     </div>
                 </a>
@@ -788,4 +788,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
