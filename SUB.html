@@ -16,6 +16,13 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- tweenmax (greensock) cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script>
+        $(function() {
+            $("#header").load("common/header.html");
+            $("#footer").load("common/footer1.html");
+
+        });
+    </script>
     <script>
         $(function() {
             //            $('#content1 > #band').hide();
@@ -707,11 +714,4 @@
     </div>
   <div id="footer"></div>
 
-    <script>
-        $(function() {
-            $("#header").load("../common/header.html");
-            $("#footer").load("../common/footer1.html");
-
-        });
-    </script>
 </body></html>
