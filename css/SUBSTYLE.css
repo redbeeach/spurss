@@ -36,7 +36,6 @@ img {
     width: 100%;
     height: 100%;
     background: url(../imag/backg.png)53% 100% no-repeat;
-    background-size: 67%;
     background-attachment: fixed;
     position: relative;
 }
