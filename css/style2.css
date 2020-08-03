@@ -2,7 +2,9 @@
     font-family: 'assc';
     src: url('../fonts/assc.ttf');
 }
-
+*{
+    margin: 0;
+}
 html,
 body {
     margin: 0;
@@ -160,7 +162,7 @@ button:focus {
 }
 
 .imgbox01 {
-    background: url(/img/banner0.png) no-repeat;
+    background: url(../img/banner0.png) no-repeat;
     background-size: cover;
     width: 1316px;
     height: 70px;
@@ -177,7 +179,7 @@ button:focus {
 }
 
 .ba1 {
-    background: url(/img/banner1.gif) no-repeat;
+    background: url(../img/banner1.gif) no-repeat;
     background-size: cover;
     width: 420px;
     height: 110px;
@@ -187,7 +189,7 @@ button:focus {
 }
 
 .ba2 {
-    background: url(/img/banner2.jpg) no-repeat;
+    background: url(../img/banner2.jpg) no-repeat;
     background-size: cover;
     width: 420px;
     height: 110px;
@@ -196,7 +198,7 @@ button:focus {
 }
 
 .ba3 {
-    background: url(/img/banner3.jpg) no-repeat;
+    background: url(../img/banner3.jpg) no-repeat;
     background-size: cover;
     width: 420px;
     height: 110px;
@@ -237,13 +239,11 @@ button:focus {
     background: rgba(208, 92, 85, .7);
     z-index: 2;
 }
-.btnbutton1 {
-    position: absolute;
-    top: -91px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9;
 
+.btnbutton1 {
+    z-index: 9;
+    padding: 20px 41%;
+    margin-left: 45px;
 }
 
 .btnbutton1 a {
@@ -521,6 +521,7 @@ article p {
     transition: opacity .5s;
     object-fit: cover;
 }
+
 .imgbox .imgg1 {
     position: absolute;
     top: 0;
@@ -531,6 +532,7 @@ article p {
     object-fit: cover;
     object-position: 50% 9%;
 }
+
 .play-button {
     width: 35px;
     height: 35px;
@@ -822,6 +824,9 @@ article p {
     .co2 {
         margin: 3em 20em;
     }
+    .btnbutton1{
+            padding: 20px 37%;
+    }
 }
 
 @media screen and (max-width:1350px) {
@@ -832,6 +837,9 @@ article p {
     #support-grid ul li {
         margin-right: 0;
     }
+    .btnbutton1 {
+    padding: 20px 32%;
+}
 }
 
 @media screen and (max-width:1160px) {
@@ -839,6 +847,7 @@ article p {
         padding: 10px 10px;
     }
 }
+
 @media(max-width: 990px) {
 
     .block-2,
@@ -870,8 +879,9 @@ article p {
     .slider-control {
         left: 22.5%;
     }
+
     .btnbutton1 {
-    top: -30px;
+     padding: 20px 34%;
     }
 }
 
@@ -1029,7 +1039,7 @@ article p {
 
     #support-grid {
         position: relative;
-       padding: 20px 99px;
+        padding: 57px 76px;
 
     }
 
@@ -1057,15 +1067,18 @@ article p {
 
 
 }
+
 @media(max-width: 450px) {
-    .banner {
-    margin: 8px -65px;
+#support-grid {
+    position: relative;
+    padding: 57px 50px;
 }
-    .ba1,.ba2,.ba3 {
-    width: 344px;
-}
+    .banner{
+        margin: 0;
+    }
     .btn0 {
-    margin: 0;
-    padding: 10px 2px;
-}
+        margin: 0;
+        padding: 10px 12px;
+    }
+
 }

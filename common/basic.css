@@ -758,3 +758,17 @@ footer {
         width: 20%;
     }
 }
+@media screen and (max-width:450px){
+    .form {
+    width: 55%;
+}
+    .col .-intro {
+    margin: 3em 2em;
+}    
+    .btn00 {
+    padding: 37px 12px;
+}
+    .clearfix {
+    padding: 19px 3px;
+}
+}
