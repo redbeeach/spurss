@@ -427,5 +427,10 @@ body .main-page-wrapper .main-content-wrapper {
 }
 }
 
-
+@media (max-width:500px){
+    .month-toggle {
+    padding-top: 12px;
+    padding-left: 43px;
+}
+}
 

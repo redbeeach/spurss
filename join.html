@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,9 +18,38 @@
             font-family: 'assc';
         }
 
+        .waper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .over{
+            background: rgba(0,0,0,.4);
+            width: 100%;
+            height: 80vh;
+        }
+        .btn1 h1 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn1 h2 {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn1 h1 a {
+            color: #fff;
+            font-size: 50px;
+            text-shadow: 2px 1px 3px #000;
+        }
+
         #join {
             position: relative;
-            top: 20vh;
+            top: 20px;
+
             text-align: center;
         }
 
@@ -46,7 +76,7 @@
             width: 340px;
             margin: 50px auto;
             position: relative;
-            left: 40px;
+            left: 60px;
         }
 
         input {
@@ -93,30 +123,45 @@
             left: 15px;
         }
 
-
-        .button a {
-            display: block;
-            border: 2px solid #bc98f5;
-            border-radius: 10px;
-            background: #bc98f5;
-            width: 250px;
-            height: 50px;
+        .btn {
+            background: #02358c;
             color: #fff;
-            font-weight: 600;
-            margin-bottom: 5px;
-            padding-top: 8px;
+            position: relative;
+            font-size: 20px;
+            padding: 19px 82px;
+            cursor: pointer;
+            transition: 800ms ease all;
+            left: 0px;
         }
 
-        .button .b1 {
+        .btn:before,
+        .btn:after {
+            content: '';
             position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background: #02358c;
+            transition: 400ms ease all;
         }
 
-        footer {
-            position: absolute;
-            top: 500px;
+        .btn:after {
+            right: inherit;
+            top: 57px;
+            left: 0;
+            bottom: 0;
+        }
+
+        .btn:hover {
+            background: #fff;
+            color: #02358c;
+        }
+
+        .btn:hover:before,
+        .btn:hover:after {
+            width: 100%;
+            transition: 800ms ease all;
         }
     </style>
     <script>
@@ -134,43 +179,64 @@
 
 <body>
     <header id="header"></header>
+    <div class="waper">
+        <div class="imgb" style="background: url(imag/join.jpg)50% 8% no-repeat; background-size: cover; width: 100%;height: 80vh; background-attachment: fixed;">
+           <div class="over"></div>
+            <span class="btn1">
+                <h1><a href="#">JOIN</a></h1>
+            </span>
+        </div>
+        <div id="join">
+            <span class="btn1">
+                <h2><a href="#">login</a></h2>
+            </span>
+            <form class="list">
+                <div class="input_group">
+                    <label for="txtemail" class="label1">EMAIL</label>
+                    <input type="text" id="txtemail" placeholder="EMAIL">
+                </div>
+                <div class="input_group">
+                    <label for="txtpassword" class="label1">PASSWORD</label>
+                    <input type="text" id="txtpassword" placeholder="PASSWORD">
+                </div>
+                <div class="input_group">
+                    <label for="txtpassword" class="label1">PASSWORD</label>
+                    <input type="text" id="password" placeholder="PASSWORD확인">
+                </div>
+                <div class="input_group">
+                    <label for="txtname" class="label1">NAME</label>
+                    <input type="text" id="txtname" placeholder="NAME">
+                </div>
+                <div class="input_group">
+                    <label for="txtPhone number" class="label1">PHONE NUMBER</label>
+                    <input type="text" id="txtPhone number" placeholder="PHONE NUMBER">
+                </div>
+                <div class="button">
+                    <a href="#" class="btn">login</a>
 
-    <div id="join">
-        <span class="btn1">
-            <h1><a href="#">JOIN</a></h1>
-        </span>
-        <form class="list">
-            <div class="input_group">
-                <label for="txtemail" class="label1">EMAIL</label>
-                <input type="text" id="txtemail" placeholder="EMAIL">
-            </div>
-            <div class="input_group">
-                <label for="txtpassword" class="label1">PASSWORD</label>
-                <input type="text" id="txtpassword" placeholder="PASSWORD">
-            </div>
-            <div class="input_group">
-                <label for="txtpassword" class="label1">PASSWORD</label>
-                <input type="text" id="password" placeholder="PASSWORD확인">
-            </div>
-            <div class="input_group">
-                <label for="txtname" class="label1">NAME</label>
-                <input type="text" id="txtname" placeholder="NAME">
-            </div>
-            <div class="input_group">
-                <label for="txtPhone number" class="label1">PHONE NUMBER</label>
-                <input type="text" id="txtPhone number" placeholder="PHONE NUMBER">
-            </div>
-        </form>
+                </div>
+            </form>
 
 
-        <div class="button">
-            <span class="b1"><a href="#">가입하고 할인혜택받기</a></span>
 
         </div>
 
     </div>
+    <footer>
 
-
-
-    <footer id="footer"></footer>
+        <div class="footer_bottom">
+            <div class="container clearfix">
+                <div class="copy">
+                    <p>
+                        Copyright &copy; 2020 <span>spurs</span> <span class="devider">&#124;</span> <a href="">Privacy Policy</a> <span class="devider">&#124;</span> <a href="">FAQ</a> <span class="devider">&#124;</span> <a href="">Support</a>
+                    </p>
+                </div>
+                <div class="designer">
+                    <p>
+                        Designed by <a href="">redbee</a> <span class="devider">&#124;</span> Only on <a href=""> Market</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body></html>
