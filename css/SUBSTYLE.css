@@ -381,13 +381,8 @@ a {
     height: 380%;
     z-index: 2;
 }
-/*--------buttonend-------*/
-footer {
-    padding: 2.5rem 0;
-    background-color: #111835;
-    text-align: center;
-    color: rgba(0, 0, 0, .7);
-}
+/*--------button end-------*/
+
 
 /*--------반응형---------*/
 @media screen and (max-width:1920px) {
@@ -439,4 +434,17 @@ footer {
     .container2 {
         width: 50%;
     }
+    .head1 {
+    background-size: cover;
+   background: url(../imag/backg.png)48% 100% no-repeat;
+}
+    .btn {
+    padding: 10px 25px;
+    }
+    .btnbutton1 {
+     left: 0; 
+}
+    .container .conbox {
+     margin-left:0; 
+}
 }

@@ -31,7 +31,7 @@ body {
 a {
     text-decoration: none;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
     display: block;
 }
 .hero {
@@ -189,6 +189,8 @@ svg[Attributes Style] {
 .toggle_list-item {
     padding-bottom: 6px;
     border-bottom: 2px solid transparent;
+    float: left;
+    
 }
 .toggle_list-item:not(:last-child) {
     margin-right: 20px;
@@ -349,10 +351,8 @@ svg[Attributes Style] {
     border-bottom: 1px solid rgba(0,102,178,.08);
 }
 .navigate-container-stick {
-    background-image: linear-gradient(to right,#18286d,#111835);
     position: -webkit-sticky;
     position: sticky;
-    top: var(--header-offset-top,0);
     z-index: 1;
 }
 
