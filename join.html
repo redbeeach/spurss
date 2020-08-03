@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common/basic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'assc';
+            src: url('../fonts/assc.ttf');
+        }
+
+        * {
+            font-family: 'assc';
+        }
+
+        #join {
+            position: relative;
+            top: 20vh;
+            text-align: center;
+        }
+
+        #join>span h1,
+        h2 {
+            display: inline-block;
+            color: #fff;
+
+        }
+
+        #join>span a {
+            color: #fff;
+
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        /*     form   */
+        #join form {
+            padding: 100px;
+        }
+
+        .input_group {
+            width: 340px;
+            margin: 50px auto;
+            position: relative;
+            left: 40px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid #888;
+            font-size: 20px;
+            display: block;
+        }
+
+        input:focus {
+            outline: none;
+            border-bottom-width: 4px;
+            border-color: #48f;
+            transition: .5s;
+        }
+
+        .label1 {
+            position: absolute;
+            color: #aaa;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: .5s;
+        }
+
+        .label_top {
+            top: -20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /*  button   */
+
+        .button {
+            position: relative;
+        }
+
+        .pretty:first-child {
+            left: -64px;
+        }
+
+        .pretty {
+            left: 15px;
+        }
+
+
+        .button a {
+            display: block;
+            border: 2px solid #bc98f5;
+            border-radius: 10px;
+            background: #bc98f5;
+            width: 250px;
+            height: 50px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 5px;
+            padding-top: 8px;
+        }
+
+        .button .b1 {
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        footer {
+            position: absolute;
+            top: 500px;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('input').click(function() {
+                $(this).attr('placeholder', '');
+                $(this).parent().find('.label1').addClass('label_top');
+            });
+
+            $("#header").load("../common/header.html");
+            $("#footer").load("../common/footer1.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div id="join">
+        <span class="btn1">
+            <h1><a href="#">JOIN</a></h1>
+        </span>
+        <form class="list">
+            <div class="input_group">
+                <label for="txtemail" class="label1">EMAIL</label>
+                <input type="text" id="txtemail" placeholder="EMAIL">
+            </div>
+            <div class="input_group">
+                <label for="txtpassword" class="label1">PASSWORD</label>
+                <input type="text" id="txtpassword" placeholder="PASSWORD">
+            </div>
+            <div class="input_group">
+                <label for="txtpassword" class="label1">PASSWORD</label>
+                <input type="text" id="password" placeholder="PASSWORD확인">
+            </div>
+            <div class="input_group">
+                <label for="txtname" class="label1">NAME</label>
+                <input type="text" id="txtname" placeholder="NAME">
+            </div>
+            <div class="input_group">
+                <label for="txtPhone number" class="label1">PHONE NUMBER</label>
+                <input type="text" id="txtPhone number" placeholder="PHONE NUMBER">
+            </div>
+        </form>
+
+
+        <div class="button">
+            <span class="b1"><a href="#">가입하고 할인혜택받기</a></span>
+
+        </div>
+
+    </div>
+
+
+
+    <footer id="footer"></footer>
+</body></html>

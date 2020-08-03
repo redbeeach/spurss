@@ -1,0 +1,627 @@
+@font-face {
+    font-family: 'assc';
+    src: url('../fonts/assc.ttf');
+}
+
+* {
+    font-family: 'assc';
+}
+
+.waper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.containe {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    right: 75px;
+    bottom: 100px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.content:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #009688, #ff68f2);
+    pointer-events: none;
+    mix-blend-mode: color;
+}
+
+.containe .textbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 50px;
+    background: #fff;
+    color: #000;
+    font-size: 17em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 800;
+    mix-blend-mode: screen;
+}
+
+.textbox span {
+    font-size: 1.2em;
+}
+
+.containe video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vicontainer {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.video2 {
+    position: relative;
+    z-index: 0;
+    ;
+}
+
+.img_box {
+    position: relative;
+    width: 889px;
+    left: 50%;
+    z-index: 1;
+}
+
+.img_box img {
+    height: 500px;
+}
+
+.title_box {
+    position: absolute;
+    top: 182px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.vicontainer .textbx {
+    width: 1920px;
+    color: #fff;
+}
+
+.vicontainer .textbx .tebx {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[id*="popup"],
+input[id*="popup1"],
+input[id*="popup2"] {
+    display: none;
+}
+
+input[id*="popup"] + label {
+    display: inline-block;
+    padding: 19px 24px;
+    border-radius: 100%;
+    background: transparent;
+    color: #fff;
+    margin: 0% 22%;
+    cursor: pointer;
+}
+
+input[id*="popup"] + label + div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+input[id*="popup"] + label + div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    background: #fff;
+    z-index: 2;
+}
+
+input[id*="popup"] + label + div > div > label {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(40%, -40%);
+    padding: 20px;
+    background: #dd5347;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+input[id*="popup"] + label + div > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 1;
+}
+
+input[id*="popup"] + label + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+input[id*="popup"]:checked + label + div {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/*spurstv*/
+
+.spurstv {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    background: #0a1324;
+}
+
+.spurstv .conten {
+    width: 100%;
+    height: 250vh;
+    background: url(/img/spustv0713.PNG)50% 0% no-repeat;
+    background-size: cover;
+
+
+}
+
+.spurstv .conten h2 {
+    font-size: 60px;
+    color: #fff;
+    padding: 115px 265px;
+}
+
+.spurstv .conten .gridbox {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+
+}
+
+.spurstv .conten .gridbox .gridcon {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.spurstv .conten .gridbox .grid1 {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    float: left;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.spurstv .conten .gridbox .grid2,
+.grid3 {
+    width: 21%;
+    height: 400px;
+    position: relative;
+    float: left;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.spurstv .conten .gridbox .grid1 .gridimg {
+    background: url(/img/0000099733_002_20200513144401502.jpg)50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+    overflow: hidden;
+}
+
+.spurstv .conten .gridbox .grid2 .gridimg {
+    background: url(/img/94918758_10157406363008505_8442142241903869952_o.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+    overflow: hidden
+}
+
+.spurstv .conten .gridbox .grid3 .gridimg {
+    background: url(/img/218883765_REUTERS_Champions-League-Group-B-Bayern-Munich-v-Tottenham-Hotspur_trans++IOy7SJj1jyXcW2pBXi2BxiNIY4RjnObJ_CXicuRdG6o.jpg)93% 50%no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.spurstv .conten .gridbox .grid1:hover .gridimg {
+    opacity: .75;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.spurstv .conten .gridbox .grid2:hover .gridimg {
+    opacity: .75;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.spurstv .conten .gridbox .grid3:hover .gridimg {
+    opacity: .75;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.spurstv .conten .gridbox .texbx {
+    position: absolute;
+    bottom: 20px;
+    padding: 30px;
+}
+
+.spurstv .conten .gridbox .texbx h3 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.spurstv .conten .gridbox .texbx p {
+    padding-top: 60px;
+    float: left;
+    line-height: 2;
+    color: red;
+}
+
+.spurstv .conten .gridbox .texbx span {
+    color: #fff;
+}
+
+/*------slick------*/
+.slick-slid {
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slick-slid .slickbx {
+    width: 30%;
+    height: 300px;
+    position: relative;
+    float: left;
+    padding-right: 30px;
+}
+
+.slick-slid .slickbx .gridimg {
+    background: url(/img/26421D3A58BB956917.png)50% 50% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+.slick-slid .slickbx .texbx {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+}
+
+.slick-slid .slickbx .texbx h3 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.slick-slid .slickbx .texbx p {
+    padding-top: 60px;
+    float: left;
+    line-height: 2;
+    color: red;
+}
+
+.slick-slid .slickbx .texbx span {
+    color: #fff;
+}
+
+/*-------slick end------*/
+.gridbx {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    padding: 60px;
+}
+
+.gridbx::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: red;
+}
+
+.gridbx .gridbox {
+    padding-top: 50px;
+}
+
+.gridbx .grid4 {
+    width: 22%;
+    height: 400px;
+    position: relative;
+    float: left;
+    padding-right: 30px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.gridbx .grid4:first-child,
+.gridbx .grid4:nth-child(5) {
+    padding-left: 30px;
+}
+
+.gridbx .grid4 .gridimg {
+    background: url(/img/51Ow436dZAL._SX352_BO1,204,203,200_.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(2) .gridimg {
+    background: url(/img/96525854_10157439247298505_9135423948584910848_o.jpg)50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(3) .gridimg {
+    background: url(/img/1191339107.jpg.jpg)79% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(4) .gridimg {
+    background: url(/img/nintchdbpict000384610001.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(5) .gridimg {
+    background: url(/img/lkw111-36-2013-104526-high-jpg.jpg)50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(6) .gridimg {
+    background: url(/img/jose-mourinho-tottenham-training-201119g.jpg)50% 50%no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(7) .gridimg {
+    background: url(/img/jose-mourinho-tottenham-training-dele-Alli.jpg)50%no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.gridbx .grid4:nth-child(8) .gridimg {
+    background: url(/img/VERTSSSS.jpg)38% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out;
+}
+
+.texbx_m {
+    display: none;
+}
+
+/*-------반응형------*/
+@media screen and (max-width:1920px) {
+    .img_box {
+        left: 29%;
+    }
+
+    .vicontainer .textbx .tebx {
+        width: 38%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width:1125px) {
+    .waper {
+        height: 600vh;
+    }
+
+    .img_box {
+        left: 11%;
+    }
+
+    .gridbx {
+        padding: 0px;
+    }
+
+    .vicontainer .textbx .tebx {
+        width: 35%;
+        margin: 0;
+        padding: 0;
+        transform: translate(34%, 64%);
+    }
+
+    .spurstv .conten .gridbox .grid1 {
+        width: 90%;
+        padding-left: 62px;
+    }
+
+    .spurstv .conten .gridbox .grid2,
+    .grid3 {
+        width: 40%;
+        padding: 27px 17px 0 72px;
+    }
+
+    .spurstv .conten .gridbox .gridcon {
+        height: auto;
+    }
+
+    .slick-slid {
+        padding-top: 30px;
+    }
+
+    .gridbx .grid4 {
+        width: 31%;
+        padding: 9px;
+
+    }
+
+    .gridbx .grid4:first-child,
+    .gridbx .grid4:nth-child(4) {
+        padding-left: 20px;
+    }
+
+    .gridbx .grid4:nth-child(5) {
+        padding-left: 10px;
+    }
+
+    .gridbx .grid4:nth-child(7) {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .waper {
+    height: 630vh;
+}
+    .spurstv {
+    width: 100%;
+    height:450vh;
+    background: #0a1324;
+}
+    .containe .textbox{
+        display: none;
+    }
+    .img_box {
+    left: 0%;
+}
+    .img_box img {
+    width: 500px;
+}
+    .vicontainer .textbx .tebx {
+    width: 24%;
+    transform: translate(7%, 64%);
+}
+    .spurstv .conten .gridbox .grid1 {
+        width: 99%;
+        padding-left: 0px;
+    }
+
+    .spurstv .conten h2 {
+        padding: 113px 17px;
+    }
+
+    .spurstv .conten .gridbox .grid2,
+    .grid3 {
+        width: 99%;
+        height: 200px;
+        padding: 20px 0px;
+    }
+
+    .spurstv .conten .gridbox .grid2 .gridimg {
+        width: 30%;
+        height: 100%;
+    }
+
+    .spurstv .conten .gridbox .texbx {
+        display: none;
+    }
+
+    .spurstv .conten .gridbox .texbx_m {
+        display: block;
+        position: absolute;
+        top: 19px;
+        right: 0px;
+        color: #fff;
+        width: 70%;
+        height: 84%;
+        background: #1a2434;
+    }
+
+    .spurstv .conten .gridbox .texbx_m h3 {
+        padding: 20px;
+    }
+
+    .spurstv .conten .gridbox .texbx_m p {
+        padding: 102px 20px;
+    }
+
+    .gridbx .grid4 {
+        width: 99%;
+        height: 200px;
+        padding: 20px 0px;
+    }
+
+    .gridbx .grid4:first-child,
+    .gridbx .grid4:nth-child(5) {
+        padding-left: 0px;
+    }
+
+    .gridbx .grid4:first-child,
+    .gridbx .grid4:nth-child(4) {
+        padding-left: 0px;
+    }
+
+    .spurstv .conten .gridbox .grid3 .gridimg {
+        width: 33%;
+    }
+
+    .gridbx .grid4:nth-child(3) .gridimg,
+    .gridbx .grid4:nth-child(5) .gridimg,
+    .gridbx .grid4:nth-child(6) .gridimg,
+    .gridbx .grid4:nth-child(7) .gridimg,
+    .gridbx .grid4:nth-child(8) .gridimg{
+        width: 30%;
+    }
+    .gridbx .grid4:nth-child(7){
+        padding-left: 0;
+    }
+    .gridbx .grid4:nth-child(4) .gridimg {
+        width: 31%;
+    }
+}

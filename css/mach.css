@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'assc';
+    src: url('../fonts/assc.ttf');
+}
+*{
+    font-family: 'assc';
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.main-content-wrapper .header5, .main-content-wrapper .header6, .main-content-wrapper h1, .main-content-wrapper h2, .main-content-wrapper h3, .main-content-wrapper h4 {
+    color: #32465a;
+}
+h3 {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+}
+ol, ul {
+    list-style: none;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+body {
+    direction: ltr;
+    background: #cdcfd4;
+    
+}
+a {
+    text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.hero {
+      height: 900px;
+      background: #010101;
+      position: relative;
+   background: url(../img/spurstv11.jpg)50% 100%;
+  background-size: cover;   
+    background-attachment: fixed;
+}
+
+#hero-title {
+      position: absolute;
+      color: #fff;
+    font-size: 2rem;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+.main-content-wrapper {
+    overflow: visible;
+}
+.main-page-wrapper .main-content-wrapper {
+    overflow: hidden;
+}
+.main-content-wrapper {
+    color: #6e7882;
+}
+.fcbm-matchplan {
+    font-size: 16px;
+}
+.fcbm-matchplan-navigation {
+    background-color: #e9e9e9;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.16);
+}
+.fcbm-matchplan-navigation__selection {
+    padding: 12px;
+    color: #002f6c;
+}
+.fcbm-matchplan-navigation__select-team {
+    order: 1;
+}
+.fcbm-select {
+    position: relative;
+}
+.select_control {
+    height: 32px;
+    font-size: 16px;
+    background-color: #d8d3d3;
+    cursor: pointer;
+    width: 100%;
+    min-width: auto;
+    color: #002f6c;
+    padding-right: 30px;
+}
+select {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding: .3125rem .9375rem;
+    margin: 0;
+    width: auto;
+    background: #961432;
+    color: #fff;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.fcbm-select__arrow {
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fcbm-select__arrow-svg {
+    display: block;
+}
+.navigation-competition {
+    order: 3;
+}
+.select-season {
+    order: 2;
+}
+.navigation-button {
+    order: 4;
+    margin-left: 24px;
+}
+.top-button {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.04);
+    border: none;
+    color: #002f6c;
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    padding: 7px;
+}
+.fcbm-subscription-button__icon {
+    margin-left: auto;
+}
+svg[Attributes Style] {
+    width: 24;
+    height: 20;
+    fill: none;
+}
+.fcbm-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.navigation {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.month-navigate {
+    margin-right: auto;
+}
+.le-text {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.month-toggle {
+    padding-top: 12px;
+}
+.month-toggle__list {
+    margin: 0;
+    margin-bottom: 1px;
+}
+.month-toggle__list {
+    display: flex;
+}
+.toggle_list-item:not(:last-child) {
+    margin-right: 20px;
+}
+.toggle_list-item {
+    padding-bottom: 6px;
+    border-bottom: 2px solid transparent;
+}
+.toggle_list-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.matches {
+    background-color: #f8f8f9;
+    margin-bottom: 80px;
+}
+.headline {
+    margin: auto;
+    max-width: 80%;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.headline h3 {
+    font-size: 28px;
+}
+.matches-list-past {
+    border-bottom: 1px solid rgba(0,102,178,.2);
+}
+.month-name {
+    margin: auto;
+    max-width: 80%;
+    font-size: 20px;
+    color: #002f6c;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    padding-top: 16px;
+    border-bottom: 1px solid rgba(0,102,178,.08);
+}
+.fcbm-match {
+    margin: auto;
+    max-width: 80%;
+    padding: 12px 16px 0 16px;
+    border-bottom: 1px solid rgba(0,102,178,.08);
+}
+.match_info { 
+    display: flex;
+}
+.match_info {
+    font-size: 14px;
+    margin-bottom: 18px;
+    color: rgba(89,120,159,.55);
+}
+.match_info .date {
+    flex: 1 1 50%;
+}
+.match_info .match_competition {
+    flex: 1 1 50%;
+    text-align: right;
+    text-align: end;
+}
+.match_competition {
+    justify-self: end;
+}
+.fcbm-match__prefix {
+    color: rgba(89,120,159,.55);
+    text-align: center;
+    height: 0;
+    transform: translateY(-16px);
+}
+._result {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}       
+
+._result .team-name.name-home {
+    margin-right: 12px;
+}
+._result .team-name {
+    flex: 1 1 30%;
+}
+.team-name {
+    color: #002f6c;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scoring {
+    display: flex;
+    align-items: center;
+}
+._result .emblem {
+    width: 34px;
+}
+.emblem-image {
+    max-width: 36px;
+}
+._result ._score {
+    flex: 1 1 auto;
+    margin-left: 12px;
+    margin-right: 12px;
+    white-space: nowrap;
+}
+
+._result .team-name.name-away {
+    margin-left: 12px;
+}
+.name-away {
+    text-align: right;
+    text-align: end;
+}
+.appendix {
+    text-align: center;
+    font-size: 14px;
+    min-height: 14px;
+    margin-bottom: 16px;
+    color: rgba(89,120,159,.55);
+}
+._actions {
+    height: 0;
+    text-align: end;
+}
+.action-toggle {
+    display: inline-block;
+    transform: translateY(-160%);
+    width: 16px;
+    height: 16px;
+}
+.fcbm-match__action-toggle-svg {
+    pointer-events: none;
+}
+.actions-template {
+    display: none;
+}
+.matches-list-future {
+    background-color: #fff;
+}
+.fcbm-matchplan__actions {
+    margin: auto;
+    max-width: 80%;
+}
+.fcbm-subscription-button {
+    margin-bottom: 80px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.04);
+    border: none;
+    color: #002f6c;
+    display: flex;
+    align-items: center;
+    min-width: 288px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.matches-list-past .fcbm-matchplan__empty-month:last-child {
+    border-bottom: 0;
+}
+.fcbm-matchplan__empty-month {
+    margin: auto;
+    max-width: 80%;
+    padding: 45px 16px 45px 16px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,102,178,.08);
+}
+.navigate-container-stick {
+    background-image: linear-gradient(to right,#18286d,#111835);
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--header-offset-top,0);
+    z-index: 1;
+}
+
+.month-toggle_link{
+    color: #000;
+}
+
+
+
+
+@media only screen and (min-width: 120rem){
+body .main-page-wrapper .main-content-wrapper {
+    margin: 0 auto;
+    max-width: 120rem;
+    background-color: #000;
+    border-left: 1px solid #c9ccd2;
+    border-right: 1px solid #c9ccd2;
+}
+}
+@media (min-width: 1024px){
+.fcbm-matchplan-navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--header-offset-top,0);
+    z-index: 1;
+}
+    .navigation_selection {
+    max-width: 85.375rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        height: 75px;
+}
+    .navigation-team {
+    margin-right: 8px;
+}
+    .hide-medium{
+    display: none;
+}
+    .fcbm-matchplan-navigation_season {
+    margin-right: 8px;
+}
+    .month-toggle__list {
+    justify-content: center;
+}
+    .headline {
+    max-width: 816px;
+}
+    .month-name {
+    max-width: 816px;
+}
+    .fcbm-match {
+    max-width: 816px;
+}
+    .team-name {
+    font-size: 16px;
+}
+    .fcbm-matchplan__actions {
+    max-width: 816px;
+}
+    .fcbm-matchplan__empty-month {
+    max-width: 816px;
+}
+    .navigate-container-stick {
+    display: none;
+}
+}
+@media (min-width: 661px){
+.value-medium {
+    display: none;
+}
+}
+
+
+
